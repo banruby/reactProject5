@@ -1,0 +1,19 @@
+.queenCard {
+    max-width: 400px;
+    width: calc((100% / 3) - 20px);
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    align-self: stretch;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    color: hotpink;
+}
