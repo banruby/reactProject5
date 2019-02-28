@@ -1,0 +1,24 @@
+.featureWrapper {
+    padding: 20px;
+    border: 10px solid white;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featureImageContainer {
+    width: calc(50% - 20px);
+}
+
+.featureInfoPanel {
+    width: calc(50% - 20px);
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+    font-size: 75px;
+}

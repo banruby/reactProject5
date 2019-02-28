@@ -1,15 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import "./QueenCard.css";
 
-const QueenCard = (props) => {
-    return (
-        <div
-        className="queenCard"
-        key="{props.key}">
-            <img src={props.imageSrc} alt=""/>
-            <h3>{props.name}</h3>
-        </div>
-    )
+class QueenCard extends Component {
+    render(){
+        return (
+            <div
+                className="queenCard"
+                key="{props.key}">
+                <img src={this.props.imageSrc} alt="" />
+                <h3>{this.props.name}</h3>
+                <button onClick={() => this.props.displayFeature(this.props.id)}>Click to learn more!</button>
+            </div>
+        )
+    }
 }
 
 export default QueenCard;

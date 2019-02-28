@@ -3,7 +3,7 @@
     width: calc((100% / 3) - 20px);
     background-color: white;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
     align-self: stretch;
 }
 
