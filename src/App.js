@@ -13,6 +13,7 @@ class App extends Component {
     super();
     this.state = {
       queens: [],
+      featureClick: false,
       featureQueen: {}
     }
   }
@@ -24,7 +25,7 @@ class App extends Component {
   getQueens = () => {
     Axios({
       method: "GET",
-      url: "http://www.nokeynoshade.party/api/queens?limit=3&offset=55",
+      url: "http://www.nokeynoshade.party/api/queens?limit=10&offset=80",
       dataResponse: "json"
     }).then(response => {
       response = response.data;
@@ -44,18 +45,23 @@ class App extends Component {
       response = response.data;
       console.log(response);
       this.setState({
+        featureClick: true,
         featureQueen: response
       })
     })
   }
+
   
   render() {
     return (
       <div className="App">
           <Header />
-          <FeatureQueen
-            feature={this.state.featureQueen}
-          />
+          { this.state.featureClick ?
+              <FeatureQueen
+                feature={this.state.featureQueen}
+              />
+              : null
+          }
           <div className="wrapper queenCardWrapper">
           {this.state.queens.map(queen => {
             return (

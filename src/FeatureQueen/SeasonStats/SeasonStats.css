@@ -1,35 +1,3 @@
-.featureWrapper {
-    padding: 20px;
-    border: 10px solid white;
-    margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.featureImageContainer {
-    width: calc(50% - 20px);
-}
-
-.featureInfoPanel {
-    width: calc(50% - 20px);
-    background-color: white;
-    padding: 20px;
-}
-
-h2 {
-    text-align: center;
-    width: 100%;
-    padding: 25px;
-    font-size: 75px;
-}
-
-.quote {
-    width: 60%;
-    margin: 20px 20%;
-    text-align: center;
-}
-
 .seasonStats {
     display: flex;
     justify-content: space-between;
@@ -50,11 +18,11 @@ div.seasonNumber, div.placeNumber {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+    height: 60px;
 }
 
 p.seasonNumber, p.placeNumber {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     line-height: 0.7;
 }
