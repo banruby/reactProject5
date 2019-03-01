@@ -25,11 +25,10 @@ class App extends Component {
   getQueens = () => {
     Axios({
       method: "GET",
-      url: "http://www.nokeynoshade.party/api/queens?limit=10&offset=80",
+      url: "http://www.nokeynoshade.party/api/queens?name=Trixie%20Mattel",
       dataResponse: "json"
     }).then(response => {
       response = response.data;
-      console.log(response);
       this.setState({
         queens: response
       })

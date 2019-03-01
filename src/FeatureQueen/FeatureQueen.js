@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./FeatureQueen.css";
 import SeasonStats from "./SeasonStats/SeasonStats.js";
+import ChallengeStats from "./ChallengeStats/ChallengeStats.js";
 
 class FeatureQueen extends Component {
     
@@ -13,10 +14,17 @@ class FeatureQueen extends Component {
                     <img src={this.props.feature.image_url} alt=""/>
                 </div>
 
-                <SeasonStats 
-                    seasons={this.props.feature.seasons}
-                />                
-                    
+                <div className="featureInfoPanel">
+                    <p className="stats">Season Stats</p>
+                    <SeasonStats 
+                        seasons={this.props.feature.seasons}
+                    />
+                    <p className="stats">Challenge Stats</p>
+                    <ChallengeStats 
+                        challenges={this.props.feature.challenges}
+                        lipsyncs={this.props.feature.lipsyncs}
+                    />
+                </div>  
             </div>
         )
     }
