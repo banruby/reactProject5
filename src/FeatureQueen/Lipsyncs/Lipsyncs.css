@@ -1,4 +1,4 @@
-.lipsyncStats {
+.challengeStats {
     display: flex;
     justify-content: space-between;
     border: solid 2px hotpink;
@@ -13,25 +13,25 @@ p.stats {
     text-decoration: underline;
 }
 
-div.mini, div.main {
+div.wins, div.losses {
     width: calc(50% - 5px);
     border: 1px solid black;
 }
 
-div.winsNumber {
+div.winsNumber, div.lossesNumber {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
 }
 
-p.winsNumber {
+p.winsNumber, p.lossesNumber {
     font-size: 40px;
     text-align: center;
     line-height: 0.7;
 }
 
-p.mini, p.main {
+p.wins, p.losses {
     text-transform: uppercase;
     text-align: center;
     padding: 5px 0;

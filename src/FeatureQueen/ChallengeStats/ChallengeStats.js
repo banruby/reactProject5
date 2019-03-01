@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ChallengeStats.js";
+import "./ChallengeStats.css";
 
 class ChallengeStats extends Component {
     constructor(){
@@ -33,13 +33,13 @@ class ChallengeStats extends Component {
                     <div className="winsNumber">
                         <p className="winsNumber">{this.state.featureMainWins}</p>
                     </div>
-                    <p className="challengeWins">Mini</p>
+                    <p className="mini">Mini</p>
                 </div>
                 <div className="main">
                     <div className="winsNumber">
                         <p className="winsNumber">{this.state.featureMiniWins}</p>
                     </div>
-                    <p className="season">Main</p>
+                    <p className="main">Main</p>
                 </div>
             </div>
         )

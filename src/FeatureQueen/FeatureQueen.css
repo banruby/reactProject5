@@ -1,20 +1,26 @@
 .featureWrapper {
     padding: 20px;
     border: 10px solid white;
-    margin: 10px auto;
+    margin: 100px auto 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .featureImageContainer {
     width: calc(50% - 20px);
+    align-self: stretch;
+    background-color: white;
 }
 
 .featureInfoPanel {
     width: calc(50% - 20px);
     background-color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h2 {
@@ -30,41 +36,14 @@ h2 {
     text-align: center;
 }
 
-.seasonStats {
-    display: flex;
-    justify-content: space-between;
-    border: solid 2px hotpink;
-    padding: 10px;
-}
-
-.seasonStats:last-of-type {
-    margin-top: 10px;
-}
-
-div.season, div.place {
-    width: calc(50% - 5px);
-    border: 1px solid black;
-}
-
-div.seasonNumber, div.placeNumber {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75px;
-}
-
-p.seasonNumber, p.placeNumber {
+.icon {
+    color: hotpink;
+    border: 2px solid hotpink;
     font-size: 50px;
-    text-align: center;
-    line-height: 0.7;
-}
-
-p.season {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5px 0;
-    width: 100%;
-    border-top: solid 1px black;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
+    position: absolute;
+    right: -28px;
+    top: -28px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 0.8;
 }

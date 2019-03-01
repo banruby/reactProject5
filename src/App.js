@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import './App.css'; //compiled with scss
+import './App.css';
 
 import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
@@ -25,7 +25,7 @@ class App extends Component {
   getQueens = () => {
     Axios({
       method: "GET",
-      url: "http://www.nokeynoshade.party/api/queens?name=Trixie%20Mattel",
+      url: "http://www.nokeynoshade.party/api/queens?name=Pearl",
       dataResponse: "json"
     }).then(response => {
       response = response.data;
@@ -50,7 +50,6 @@ class App extends Component {
     })
   }
 
-  
   render() {
     return (
       <div className="App">
