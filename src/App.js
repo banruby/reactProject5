@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import './App.css';
-
 import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
 import QueenCard from "./QueenCard/QueenCard.js";
 import FeatureQueen from "./FeatureQueen/FeatureQueen.js";
+import SeasonSearch from "./SeasonSearch/SeasonSearch.js";
 
 
 class App extends Component {
@@ -19,18 +19,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getQueens();
+    
   }
 
-  getQueens = () => {
+  getQueens = (url) => {
     Axios({
       method: "GET",
-      url: "http://www.nokeynoshade.party/api/queens?name=Pearl",
+      url: url,
       dataResponse: "json"
     }).then(response => {
       response = response.data;
+      console.log(response);
       this.setState({
-        queens: response
+        queens: response,
+        featureClick: false
       })
     })
   }
@@ -40,13 +42,20 @@ class App extends Component {
       method: "GET",
       url: `http://www.nokeynoshade.party/api/queens/${selectedQueenID}/`,
       dataResponse: "json"
-    }).then(response => {
-      response = response.data;
-      console.log(response);
+    }).then(feature => {
+      feature = feature.data;
+      console.log(feature);
       this.setState({
         featureClick: true,
-        featureQueen: response
+        featureQueen: feature
       })
+    })
+  }
+
+  clearFeature = (value) => {
+    this.setState({
+      featureClick: value,
+      featureQueen: {}
     })
   }
 
@@ -54,9 +63,14 @@ class App extends Component {
     return (
       <div className="App">
           <Header />
+          <SeasonSearch 
+            getQueens={this.getQueens}
+          />
           { this.state.featureClick ?
               <FeatureQueen
                 feature={this.state.featureQueen}
+                featureClick={this.state.featureClick}
+                clearFeature={this.clearFeature}
               />
               : null
           }

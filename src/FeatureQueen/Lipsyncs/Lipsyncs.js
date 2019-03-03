@@ -7,8 +7,6 @@ class Lipsyncs extends Component {
         this.state = {
             lipsyncWins: 0,
             lipsyncLosses: 0,
-            lipsyncWinArray: [],
-            lipsyncLossArray: []
         }
     }
 
@@ -24,9 +22,7 @@ class Lipsyncs extends Component {
         });
         this.setState({
             lipsyncWins: lipsyncWins.length,
-            lipsyncLosses: lipsyncLosses.length,
-            lipsyncWinArray: lipsyncWins,
-            lipsyncLossArray: lipsyncLosses
+            lipsyncLosses: lipsyncLosses.length
         })
     }
 

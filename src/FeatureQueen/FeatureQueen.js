@@ -8,13 +8,22 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 class FeatureQueen extends Component {
-    
+    constructor() {
+        super();
+        this.state = {
+            featureClick: true,
+        }
+    }
+
     render(){
         return (
             <div className="wrapper featureWrapper">
                 <span className="icon">
-                    <FontAwesomeIcon icon={faTimesCircle} />
+                    <FontAwesomeIcon icon={faTimesCircle} 
+                    onClick={() => this.props.clearFeature(false)}
+                    />
                 </span>
+
                 <h2>{this.props.feature.name}</h2>
                 <p className="quote">"{this.props.feature.quote}"</p>
                 <div className="featureImageContainer">
