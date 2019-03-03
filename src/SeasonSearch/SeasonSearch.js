@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./SeasonSearch.css";
 
 class SeasonSearch extends Component {
-    constructor(){
-        super();
-    }
-
     render() {
         const season1 = "http://www.nokeynoshade.party/api/seasons/1/queens";
         const season2 = "http://www.nokeynoshade.party/api/seasons/2/queens";
@@ -17,7 +13,6 @@ class SeasonSearch extends Component {
         const season8 = "http://www.nokeynoshade.party/api/seasons/9/queens";
         const season9 = "http://www.nokeynoshade.party/api/seasons/11/queens";
         const season10 = "http://www.nokeynoshade.party/api/seasons/13/queens";
-
         const allStars1 = "http://www.nokeynoshade.party/api/seasons/5/queens";
         const allStars2 = "http://www.nokeynoshade.party/api/seasons/10/queens";
         const allStars3 = "http://www.nokeynoshade.party/api/seasons/12/queens";
@@ -91,9 +86,6 @@ class SeasonSearch extends Component {
             </div>
         )
     }
-
 }
-
-
 
 export default SeasonSearch;

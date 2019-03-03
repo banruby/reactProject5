@@ -18,10 +18,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    
-  }
-
   getQueens = (url) => {
     Axios({
       method: "GET",
@@ -29,7 +25,6 @@ class App extends Component {
       dataResponse: "json"
     }).then(response => {
       response = response.data;
-      console.log(response);
       this.setState({
         queens: response,
         featureClick: false
@@ -44,7 +39,6 @@ class App extends Component {
       dataResponse: "json"
     }).then(feature => {
       feature = feature.data;
-      console.log(feature);
       this.setState({
         featureClick: true,
         featureQueen: feature

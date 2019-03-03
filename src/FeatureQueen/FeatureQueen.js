@@ -22,12 +22,13 @@ class FeatureQueen extends Component {
                     <FontAwesomeIcon icon={faTimesCircle} 
                     onClick={() => this.props.clearFeature(false)}
                     />
+                    <span className="sr-only">Closes feature queen section.</span>
                 </span>
 
                 <h2>{this.props.feature.name}</h2>
                 <p className="quote">"{this.props.feature.quote}"</p>
                 <div className="featureImageContainer">
-                    <img src={this.props.feature.image_url} alt=""/>
+                    <img src={this.props.feature.image_url} alt={this.props.feature.name} />
                 </div>
                 <div className="featureInfoPanel">
                     <p className="stats">Season Stats</p>
@@ -37,7 +38,6 @@ class FeatureQueen extends Component {
                     <p className="stats">Challenge Wins</p>
                     <ChallengeStats 
                         challenges={this.props.feature.challenges}
-                        
                     />
                     <p className="stats">Lipsyncs</p>
                     <Lipsyncs 

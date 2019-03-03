@@ -7,7 +7,7 @@ class QueenCard extends Component {
             <div
                 className="queenCard"
                 key="{props.key}">
-                <img src={this.props.imageSrc} alt="" />
+                <img src={this.props.imageSrc} alt={this.props.name} />
                 <div>
                     <h3>{this.props.name}</h3>
                     <a href="#header">   
