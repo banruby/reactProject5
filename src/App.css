@@ -27,6 +27,7 @@ h1, h2, h3, ul, li, a, p {
 
 html {
     font-size: 125%;
+    scroll-behavior: smooth;
 }
 
 img {

@@ -17,7 +17,7 @@ class FeatureQueen extends Component {
 
     render(){
         return (
-            <div className="wrapper featureWrapper">
+            <div className="wrapper featureWrapper" id="feature">
                 <span className="icon">
                     <FontAwesomeIcon icon={faTimesCircle} 
                     onClick={() => this.props.clearFeature(false)}
