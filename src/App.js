@@ -35,7 +35,7 @@ class App extends Component {
   displayFeature = (selectedQueenID) => {
     Axios({
       method: "GET",
-      url: `http://www.nokeynoshade.party/api/queens/${selectedQueenID}/`,
+      url: `https://www.nokeynoshade.party/api/queens/${selectedQueenID}/`,
       dataResponse: "json"
     }).then(feature => {
       feature = feature.data;

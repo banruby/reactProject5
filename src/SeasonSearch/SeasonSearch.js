@@ -3,21 +3,21 @@ import "./SeasonSearch.css";
 
 class SeasonSearch extends Component {
     render() {
-        const season1 = "http://www.nokeynoshade.party/api/seasons/1/queens";
-        const season2 = "http://www.nokeynoshade.party/api/seasons/2/queens";
-        const season3 = "http://www.nokeynoshade.party/api/seasons/3/queens";
-        const season4 = "http://www.nokeynoshade.party/api/seasons/4/queens";
-        const season5 = "http://www.nokeynoshade.party/api/seasons/6/queens"
-        const season6 = "http://www.nokeynoshade.party/api/seasons/7/queens";
-        const season7 = "http://www.nokeynoshade.party/api/seasons/8/queens";
-        const season8 = "http://www.nokeynoshade.party/api/seasons/9/queens";
-        const season9 = "http://www.nokeynoshade.party/api/seasons/11/queens";
-        const season10 = "http://www.nokeynoshade.party/api/seasons/13/queens";
-        const allStars1 = "http://www.nokeynoshade.party/api/seasons/5/queens";
-        const allStars2 = "http://www.nokeynoshade.party/api/seasons/10/queens";
-        const allStars3 = "http://www.nokeynoshade.party/api/seasons/12/queens";
-        const allStars4 = "http://www.nokeynoshade.party/api/seasons/14/queens";
-        const winners = "http://www.nokeynoshade.party/api/queens/winners";
+        const season1 = "https://www.nokeynoshade.party/api/seasons/1/queens";
+        const season2 = "https://www.nokeynoshade.party/api/seasons/2/queens";
+        const season3 = "https://www.nokeynoshade.party/api/seasons/3/queens";
+        const season4 = "https://www.nokeynoshade.party/api/seasons/4/queens";
+        const season5 = "https://www.nokeynoshade.party/api/seasons/6/queens"
+        const season6 = "https://www.nokeynoshade.party/api/seasons/7/queens";
+        const season7 = "https://www.nokeynoshade.party/api/seasons/8/queens";
+        const season8 = "https://www.nokeynoshade.party/api/seasons/9/queens";
+        const season9 = "https://www.nokeynoshade.party/api/seasons/11/queens";
+        const season10 = "https://www.nokeynoshade.party/api/seasons/13/queens";
+        const allStars1 = "https://www.nokeynoshade.party/api/seasons/5/queens";
+        const allStars2 = "https://www.nokeynoshade.party/api/seasons/10/queens";
+        const allStars3 = "https://www.nokeynoshade.party/api/seasons/12/queens";
+        const allStars4 = "https://www.nokeynoshade.party/api/seasons/14/queens";
+        const winners = "https://www.nokeynoshade.party/api/queens/winners";
 
         return (
             <div className="wrapper">
