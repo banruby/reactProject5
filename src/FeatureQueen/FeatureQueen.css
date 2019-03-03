@@ -54,3 +54,40 @@ h2 {
     color: #a87de7;
     border: 2px solid #a87de7;
 }
+
+@media screen and (max-width: 1000px) {
+    .featureImageContainer, .featureInfoPanel {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .featureWrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.featureInfoPanel {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .featureImageContainer, .featureInfoPanel {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .featureWrapper {
+        padding: 5px;
+    }
+    
+    .featureImageContainer, .featureInfoPanel {
+        width: 100%;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}

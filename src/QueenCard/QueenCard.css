@@ -1,5 +1,4 @@
 .queenCard {
-    max-width: 400px;
     width: calc((100% / 3) - 20px);
     background-color: white;
     padding: 10px;
@@ -46,4 +45,38 @@ button {
 button:hover {
     background-color: #e44bba;
     cursor: crosshair;
+}
+
+@media screen and (max-width: 860px) {
+    .queenCard {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .queenCard {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .queenCard img {
+        width: 80%;
+        text-align: center;
+    }
+
+    .queenCardWrapper {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .wrapper {
+        width: 85%;
+    }
+
+    button {
+        width: 200px;
+    }
 }

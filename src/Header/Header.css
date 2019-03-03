@@ -18,3 +18,18 @@ header p {
     color: #e44bba;
 }
 
+@media screen and (max-width: 560px) {
+    header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header h1 {
+        font-size: 50px;
+    }
+    header p {
+        font-size: 18px;
+    }
+}
+
