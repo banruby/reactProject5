@@ -10,11 +10,9 @@ class QueenCard extends Component {
                 <img src={this.props.imageSrc} alt={this.props.name} />
                 <div>
                     <h3>{this.props.name}</h3>
-                    <a href="#header">   
-                        <button 
-                        onClick={() => this.props.displayFeature(this.props.id)}>More Info
-                        </button>
-                    </a>
+                    <button 
+                    onClick={() => this.props.displayFeature(this.props.id)}>More Info
+                    </button>
                 </div>
             </div>
         )
