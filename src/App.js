@@ -63,9 +63,6 @@ class App extends Component {
     return (
       <div className="App">
           <Header />
-          <SeasonSearch 
-            getQueens={this.getQueens}
-          />
           { this.state.featureClick ?
               <FeatureQueen
                 feature={this.state.featureQueen}
@@ -87,6 +84,9 @@ class App extends Component {
             )
           })}
           </div>
+          <SeasonSearch
+            getQueens={this.getQueens}
+          />
           <Footer />
       </div>
     );

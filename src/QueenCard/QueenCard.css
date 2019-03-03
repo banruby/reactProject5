@@ -5,6 +5,20 @@
     padding: 10px;
     margin: 10px 0;
     align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.queenCardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queenCard div {
+    text-align: center;
 }
 
 img {
@@ -16,4 +30,20 @@ h3 {
     padding: 10px;
     text-align: center;
     color: hotpink;
+    font-size: 30px;
+}
+
+button {
+    background-color: #a855da;
+    border: none;
+    margin: 10px 0;
+    width: 60%;
+    padding: 15px 25px 10px 25px;
+    line-height: 1;
+    color: white;
+}
+
+button:hover {
+    background-color: #e44bba;
+    cursor: crosshair;
 }

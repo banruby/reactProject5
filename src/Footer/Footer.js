@@ -5,8 +5,10 @@ class Footer extends Component {
     render(){
         return (
             <footer>
-                <div className="wrapper">
-                    <h1>This is the footer!</h1>
+                <div className="wrapper footerWrapper">
+                    <p>Ruby Bantock</p>
+                    <p>HackerYou 2019</p>
+                    <p>Data: <a href="https://drag-race-api.readme.io/docs">No Key No Shade</a></p>
                 </div>
             </footer>
         )

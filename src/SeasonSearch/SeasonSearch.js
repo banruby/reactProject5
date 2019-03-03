@@ -15,110 +15,78 @@ class SeasonSearch extends Component {
         const season6 = "http://www.nokeynoshade.party/api/seasons/7/queens";
         const season7 = "http://www.nokeynoshade.party/api/seasons/8/queens";
         const season8 = "http://www.nokeynoshade.party/api/seasons/9/queens";
-
+        const season9 = "http://www.nokeynoshade.party/api/seasons/11/queens";
+        const season10 = "http://www.nokeynoshade.party/api/seasons/13/queens";
 
         const allStars1 = "http://www.nokeynoshade.party/api/seasons/5/queens";
+        const allStars2 = "http://www.nokeynoshade.party/api/seasons/10/queens";
+        const allStars3 = "http://www.nokeynoshade.party/api/seasons/12/queens";
+        const allStars4 = "http://www.nokeynoshade.party/api/seasons/14/queens";
+        const winners = "http://www.nokeynoshade.party/api/queens/winners";
 
         return (
             <div className="wrapper">
-                <div className="seasonSearchContainer">
+                <div className="searchContainer">
                     <a href="#"
-                        onClick={() => this.props.getQueens(season1)}
-                    >
-                        <div>
-                            <img src="" alt=""/>
-                            <p>S1</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season1)}>
+                        <p>Season One</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season2)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S2</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season2)}>
+                        <p>Season Two</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season3)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S3</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season3)}>
+                        <p>Season Three</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season4)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S4</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season4)}>
+                        <p>Season Four</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season5)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S5</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season5)}>
+                        <p>Season Five</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season6)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S6</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season6)}>
+                        <p>Season Six</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season7)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S7</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season7)}>
+                        <p>Season Seven</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season8)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S8</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season8)}>
+                        <p>Season Eight</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season1)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S1</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season9)}>
+                        <p>Season Nine</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season1)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S1</p>
-                        </div>
+                        onClick={() => this.props.getQueens(season10)}>
+                        <p>Season Ten</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season1)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S1</p>
-                        </div>
+                        onClick={() => this.props.getQueens(allStars1)}>
+                        <p>All Stars One</p>
                     </a>
                     <a href="#"
-                        onClick={() => this.props.getQueens(season1)}
-                    >
-                        <div>
-                            <img src="" alt="" />
-                            <p>S1</p>
-                        </div>
+                        onClick={() => this.props.getQueens(allStars2)}>
+                        <p>All Stars Two</p>
                     </a>
-                    
+                    <a href="#"
+                        onClick={() => this.props.getQueens(allStars3)}>
+                        <p>All Stars Three</p>
+                    </a>
+                    <a href="#"
+                        onClick={() => this.props.getQueens(allStars4)}>
+                        <p>All Stars Four</p>
+                    </a>
+                    <a href="#"
+                        onClick={() => this.props.getQueens(winners)}>
+                        <p>Winners</p>
+                    </a>
                 </div>
             </div>
         )

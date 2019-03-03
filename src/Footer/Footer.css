@@ -1,7 +1,18 @@
 footer {
-    background-color: hotpink;
+    background-color: #e44bba;
     padding: 25px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: white;
 }

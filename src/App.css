@@ -10,6 +10,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* GENERAL */
 
+div.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 240px 0 150px 0;
+}
+
 h1, h2, h3, ul, li, a, p {
     margin: 0;
     padding: 0;
@@ -24,19 +34,18 @@ img {
 }
 
 body {
-    background-color: pink;
+    background-color: #f19cdd;
+    font-family: 'Englebert', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'Molle', cursive;
 }
 
 .wrapper {
     max-width: 1280px;
     width: 85%;
     margin: 0 auto;
-}
-
-.queenCardWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
