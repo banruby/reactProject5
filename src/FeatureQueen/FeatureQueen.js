@@ -19,8 +19,10 @@ class FeatureQueen extends Component {
         return (
             <div className="wrapper featureWrapper" id="feature">
                 <span className="icon">
-                    <FontAwesomeIcon icon={faTimesCircle} 
+                    <FontAwesomeIcon icon={faTimesCircle}
+                    className="iconCross"
                     onClick={() => this.props.clearFeature(false)}
+                    tabIndex="0"
                     />
                     <span className="sr-only">Closes feature queen section.</span>
                 </span>
