@@ -28,13 +28,14 @@ div.winsNumber {
 p.winsNumber {
     font-size: 40px;
     text-align: center;
-    line-height: 0.7;
+    line-height: 1;
+    padding-top: 10px;
 }
 
 p.mini, p.main {
     text-transform: uppercase;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     width: 100%;
     border-top: solid 1px black;
     letter-spacing: 2px;
