@@ -8,11 +8,12 @@ class QueenCard extends Component {
                 className="queenCard"
                 key="{props.key}">
                 <img src={this.props.imageSrc} alt={this.props.name} />
-                <div>
+                <div className="cardContainer">
                     <h3>{this.props.name}</h3>
-                    <button 
-                    onClick={() => this.props.displayFeature(this.props.id)}>More Info
-                    </button>
+                    <a href="#" className="button"
+                    onClick={() => this.props.displayFeature(this.props.id)}>
+                        More Info
+                    </a>
                 </div>
             </div>
         )
