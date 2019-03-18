@@ -1,0 +1,27 @@
+footer {
+    background-color: #e44bba;
+    padding: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .footerWrapper {
+        flex-direction: column;
+    }
+    footer p {
+        padding: 5px 0;
+    }
+}

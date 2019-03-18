@@ -1,0 +1,43 @@
+.lipsyncStats {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px hotpink;
+    padding: 10px;
+}
+
+p.stats {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+div.mini, div.main {
+    width: calc(50% - 5px);
+    border: 1px solid black;
+}
+
+div.winsNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+p.winsNumber {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+p.mini, p.main {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-top: solid 1px black;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
