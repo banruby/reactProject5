@@ -24,8 +24,12 @@
     text-align: center;
 }
 
-img {
+.queenCard img {
     width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    object-position: top center;
+    overflow: hidden;
 }
 
 h3 {
