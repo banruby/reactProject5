@@ -11,7 +11,7 @@
 .featureImageContainer {
     width: calc(50% - 20px);
     align-self: stretch;
-    background-color: white;
+    background-color: #f19cdd;
 }
 
 .featureInfoPanel {
