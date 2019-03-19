@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SeasonSearch.css";
+import { Link } from "react-router-dom";
 
 class SeasonSearch extends Component {
     render() {
@@ -22,66 +23,51 @@ class SeasonSearch extends Component {
         return (
             <div className="wrapper">
                 <div className="searchContainer">
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season1)}>
+                    <Link to="/season" onClick={() => this.props.getQueens(season1)}>
                         <p>Season One</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season2)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season2)}>
                         <p>Season Two</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season3)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season3)}>
                         <p>Season Three</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season4)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season4)}>
                         <p>Season Four</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season5)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season5)}>
                         <p>Season Five</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season6)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season6)}>
                         <p>Season Six</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season7)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season7)}>
                         <p>Season Seven</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season8)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season8)}>
                         <p>Season Eight</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season9)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season9)}>
                         <p>Season Nine</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(season10)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(season10)}>
                         <p>Season Ten</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(allStars1)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(allStars1)}>
                         <p>All Stars One</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(allStars2)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(allStars2)}>
                         <p>All Stars Two</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(allStars3)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(allStars3)}>
                         <p>All Stars Three</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(allStars4)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(allStars4)}>
                         <p>All Stars Four</p>
-                    </a>
-                    <a href="#"
-                        onClick={() => this.props.getQueens(winners)}>
+                    </Link>
+                    <Link to="/season" onClick={() => this.props.getQueens(winners)}>
                         <p>Winners</p>
-                    </a>
+                    </Link>
                 </div>
             </div>
         )

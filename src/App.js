@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
 import QueenCard from "./QueenCard/QueenCard.js";
@@ -56,32 +61,37 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Header />
-          { this.state.featureClick ?
-              <FeatureQueen
-                feature={this.state.featureQueen}
-                featureClick={this.state.featureClick}
-                clearFeature={this.clearFeature}
-              />
-              : null
-          }
-          <div className="wrapper queenCardWrapper">
-          {this.state.queens.map(queen => {
-            return (
-              <QueenCard 
-                key={queen.id}
-                id={queen.id}
-                name={queen.name}
-                imageSrc={queen.image_url}
-                displayFeature={this.displayFeature}
-              />
-            )
-          })}
+        <Router>
+          <div>
+            <Header />
+            { this.state.featureClick ?
+                <FeatureQueen
+                  feature={this.state.featureQueen}
+                  featureClick={this.state.featureClick}
+                  clearFeature={this.clearFeature}
+                />
+                : null
+            }
+            <div className="wrapper queenCardWrapper">
+            {this.state.queens.map(queen => {
+              return (
+                <Route path="/season" render={ () => { return (
+                  <QueenCard
+                    key={queen.id}
+                    id={queen.id}
+                    name={queen.name}
+                    imageSrc={queen.image_url}
+                    displayFeature={this.displayFeature}
+                  />
+                )}}/>
+                )
+              })}
+            </div>
+            <Route path="/" exact render={ () => { return (<SeasonSearch getQueens={this.getQueens}/>)}}
+            />
+            <Footer />
           </div>
-          <SeasonSearch
-            getQueens={this.getQueens}
-          />
-          <Footer />
+        </Router>
       </div>
     );
   }
