@@ -58,38 +58,38 @@ class App extends Component {
     })
   }
 
+  clearSeason = () => {
+    this.setState({
+      queens: [],
+      featureQueen: {},
+      featureClick: false
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <Router>
-          <div>
-            <Header />
-            { this.state.featureClick ?
-                <FeatureQueen
-                  feature={this.state.featureQueen}
-                  featureClick={this.state.featureClick}
-                  clearFeature={this.clearFeature}
-                />
-                : null
-            }
-            <div className="wrapper queenCardWrapper">
-            {this.state.queens.map(queen => {
-              return (
-                <Route path="/season" render={ () => { return (
-                  <QueenCard
-                    key={queen.id}
-                    id={queen.id}
-                    name={queen.name}
-                    imageSrc={queen.image_url}
-                    displayFeature={this.displayFeature}
-                  />
-                )}}/>
-                )
-              })}
-            </div>
-            <Route path="/" exact render={ () => { return (<SeasonSearch getQueens={this.getQueens}/>)}}
-            />
-            <Footer />
+          <Header clearSeason={this.clearSeason}/>
+          { this.state.featureClick ?
+              <FeatureQueen
+                feature={this.state.featureQueen}
+                featureClick={this.state.featureClick}
+                clearFeature={this.clearFeature}
+              />
+              : null
+          }
+          <div className="wrapper queenCardWrapper">
+          {this.state.queens.map(queen => {
+            return (
+              <QueenCard 
+                key={queen.id}
+                id={queen.id}
+                name={queen.name}
+                imageSrc={queen.image_url}
+                displayFeature={this.displayFeature}
+              />
+            )
+          })}
           </div>
         </Router>
       </div>

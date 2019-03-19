@@ -7,9 +7,11 @@ class Header extends Component {
         return (
             <header id="header">
                 <div className="wrapper">
-                    <Link to="/">
-                        <h1>The Library</h1>
-                    </Link>
+                    <a href="#"
+                        onClick={() => this.props.clearSeason()}
+                    >
+                        <h1 >The Library</h1>
+                    </a>
                     <p>Read up on all your favourite queens before they read you.</p>
                 </div>
             </header>
