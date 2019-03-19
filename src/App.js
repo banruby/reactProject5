@@ -53,10 +53,18 @@ class App extends Component {
     })
   }
 
+  clearSeason = () => {
+    this.setState({
+      queens: [],
+      featureQueen: {},
+      featureClick: false
+    })
+  }
+
   render() {
     return (
       <div className="App">
-          <Header />
+          <Header clearSeason={this.clearSeason}/>
           { this.state.featureClick ?
               <FeatureQueen
                 feature={this.state.featureQueen}
